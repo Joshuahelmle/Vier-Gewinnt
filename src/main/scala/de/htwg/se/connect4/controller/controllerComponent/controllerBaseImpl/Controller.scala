@@ -182,6 +182,8 @@ class Controller @Inject()(var board: BoardInterface, var players: List[Player])
       case "InGameState" => state = InGameState(this)
     }
   }
+
+  override def getFileInterface: FileIoInterface = fileIo
 }
 
 

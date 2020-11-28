@@ -3,6 +3,7 @@ package de.htwg.se.connect4.controller.controllerComponent
 import de.htwg.se.connect4.controller.controllerComponent.controllerBaseImpl.ControllerState
 import de.htwg.se.connect4.model.boardComponent.BoardInterface
 import de.htwg.se.connect4.model.boardComponent.boardBaseImpl.Cell
+import de.htwg.se.connect4.model.fileIoComponent.FileIoInterface
 import de.htwg.se.connect4.model.playerComponent.Player
 import de.htwg.se.connect4.util.Observable
 
@@ -61,5 +62,7 @@ trait ControllerInterface extends Observable {
   def getPlayers: List[Player]
 
   def getCurrentPlayerIndex: Int
+
+  def getFileInterface : FileIoInterface
 
 }
